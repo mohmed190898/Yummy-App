@@ -1,0 +1,127 @@
+*,::after,::before{
+    box-sizing: border-box;
+}
+body{
+    background-color: #0D0D0D;
+}
+::placeholder{
+    /* color: white; */
+    /* font-weight: bold; */
+}
+ul li {
+    cursor: pointer;
+    transition: 1s;
+}
+ul li:hover{
+    color: red;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50%;
+    position: fixed;
+    animation: roll 1s ease-in-out infinite alternate;
+    left: 50%;
+    top: 50%;
+  }
+  .loader:after{
+    content:"";
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    border: 5px solid ;
+    border-color: #ff3d00 transparent;
+  }
+  @keyframes roll {
+    0% {
+      transform: translateX(-150%) rotate(0deg) ;
+    }
+    100% {
+      transform:  translateX(150%) rotate(360deg);
+    }
+  }
+
+aside {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    white-space: nowrap;
+    
+
+}
+.outer-side{
+    display: none;
+}
+aside .side-nav-menu {
+    color: white;
+    font-size: 20px;
+    background-color: #0D0D0D;
+    height: 100%;
+}
+aside .side-nav-menu .links{
+    margin-top: 40px;
+}
+
+
+aside .nav-header{
+    background-color: #FFFFFF;
+    color: black;
+    font-size: 25px;
+    height: 100%;
+    text-align: center;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100px;
+    
+}
+.nav-header .open-close-icon i{
+    cursor: pointer;
+    height: 10px;
+}
+
+
+.card-content{
+    position: relative;
+    overflow: hidden;
+    border-color: transparent;
+}
+.card-content:hover .img-layer{
+    transform: translateY(-100%);
+    border-color: transparent;
+
+}
+.card-content .img-layer{
+    background-color: #f9f6f6ca;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    border-color: transparent;
+
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+.nav-footer .mySignature{
+    text-decoration: none;
+    color: green;
+}
+.nav-header .imgContainer{
+}
+
+
+@media screen and (max-width: 920px) { 
+    .nav-header{
+        background-color: transparent !important;
+        color: white !important;
+    }
+    .imgContainer ,.icons{
+        visibility: hidden;
+    }
+}

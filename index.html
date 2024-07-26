@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+
+    <!-- Load Screen -->
+    <div>
+        <span class="loader  ms-5 d-flex"></span>
+    </div>
+    <!--  -->
+    <aside class="d-flex ">
+        <div class="outer-side">
+            <div class="side-nav-menu nav d-flex flex-column justify-content-between p-3">
+                <div class="links">
+                    <ul class="list-unstyled overflow-hidden">
+                        <li onclick="displayInputs(); toggleNav()" class="py-2 position-relative ">Search</li>
+                        <li onclick="getCategory(); toggleNav()" class="py-2 position-relative ">Categories</li>
+                        <li onclick="getAreaApi(); toggleNav()" class="py-2 position-relative ">Area</li>
+                        <li onclick="getIngredientApi(); toggleNav()" class="py-2 position-relative ">Ingredients</li>
+                        <!-- <li onclick="" class="py-2 position-relative ">Contact Us</li> -->
+                    </ul>
+                </div>
+
+                <div class="nav-footer">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="footer">
+                        <p>Copyright Â© 2019 All Rights <br> Reserved.</p>
+                        <p>Created by <a target="_blank" class="mySignature"
+                                href="https://github.com/mohmed190898">Mohamed mahmoud</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header">
+            <div class="imgContainer">
+                <img class="w-100" src="css/imgs/pngwing.com.png" alt="logo">
+            </div>
+            <span class=" open-close-icon">
+                <i class=" close fa-solid fa-bars fs-1"></i>
+                <i class=" d-none open fa-solid fa-xmark fs-1"></i>
+
+            </span>
+
+            <div class="icons d-flex flex-column">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes pt-2"></i>
+            </div>
+        </div>
+    </aside>
+
+    <section id="home">
+
+        <div class="container">
+            <div class="inputsData">
+
+            </div>
+            <div class="row py-5 g-4 dataRow">
+
+            </div>
+        </div>
+        </div>
+    </section>
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
